@@ -1,0 +1,11 @@
+<h1>Here is Login Page</h1>
+<a [routerLink]="['/admin']">Go To Admin</a>
+
+{{'HELLO' | translate}}
+
+<button (click)="changeLang()">Dili Degistir</button>
+
+<gp-loader *ngIf="isLoading"></gp-loader>
+<div *ngIf="!isLoading" *ngFor="let item of lists; let i = index">
+    {{item.address}}
+</div>
