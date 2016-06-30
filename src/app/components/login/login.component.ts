@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
 
     changeLang() {
         this.translate.use('en-US');
+        console.log(this.translate.currentLang)
     }
 
     private getList() {
